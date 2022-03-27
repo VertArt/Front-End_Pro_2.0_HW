@@ -7,10 +7,12 @@ const action = prompt('Какое действие хотите произвес
 if ( isNaN(firstNumber) ) {
     alert('Вы ввели не число ')
 };
+brake;
 
 if ( isNaN(secondNumber) ) {
     alert('Вы ввели не число ')
 };
+brake;
 
 switch (action){
     case '*':
