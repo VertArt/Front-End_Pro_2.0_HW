@@ -4,31 +4,27 @@ const secondNumber = +prompt('Введите второе число:');
 
 const action = prompt('Какое действие хотите произвести ("*", "/", "+", "-") ?: ');
 
-if ( isNaN(firstNumber) ) {
-    alert('Вы ввели не число ')
-};
-
-if ( isNaN(secondNumber) ) {
+if ( isNaN(firstNumber) || isNaN(secondNumber) ) {
     alert('Вы ввели не число ')
 };
 
 switch (action){
     case '*':
-        let multiply = firstNumber * secondNumber;
+        const multiply = firstNumber * secondNumber;
         alert(`${firstNumber} * ${secondNumber} = ${multiply} `);
-        brake;
+        break;
     case '/':
-        let division = firstNumber / secondNumber;
+        const division = firstNumber / secondNumber;
         alert(`${firstNumber} / ${secondNumber} = ${division} `);
-        brake;
+        break;
     case '+':
-        let addition = firstNumber + secondNumber;
+        const addition = firstNumber + secondNumber;
         alert(`${firstNumber} + ${secondNumber} = ${addition} `);
-        brake;
+        break;
     case '-':
         let subtraction = firstNumber - secondNumber;
         alert(`${firstNumber} - ${secondNumber} = ${subtraction} `);
-        brake;
+        break;
     default:
         alert('вы ввели ахинею...')
 }
