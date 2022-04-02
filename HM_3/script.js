@@ -1,3 +1,13 @@
+const firstNumber = getNumber();
+
+const secondNumber = getNumber();
+
+const operator = getOperator();
+
+let result = calculate(firstNumber, secondNumber, operator)
+
+showResult(firstNumber, secondNumber, operator, result);
+
 function getNumber() {
     a = +prompt ('What number?');
     while ( isNaN(a)) {
@@ -12,11 +22,6 @@ function getOperator() {
     return b;
 }
 
-// function checkOperator() {
-//     b = prompt ('What action do you want to take?')
-//     switch
-// }
-
 function calculate(x, y, action) {
     switch (action) {
         case '*': return x * y;
@@ -29,16 +34,3 @@ function calculate(x, y, action) {
 function showResult (x, y, operator, result) {
     alert(`${x} ${operator} ${y} = ${result}`)
 }
-
-// произвести вычисление
-// вывести ответ
-
-const firstNumber = getNumber();
-
-const secondNumber = getNumber();
-
-const operator = getOperator();
-
-let result = calculate(firstNumber, secondNumber, operator)
-
-showResult(firstNumber, secondNumber, operator, result);
