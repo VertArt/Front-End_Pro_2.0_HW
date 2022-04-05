@@ -5,7 +5,7 @@ const operator = getOperator();
 
 const operand = getOperand();
 
-// result = calculate(operand[0], operand[1], operator);
+result = calculate(+operand[0], +operand[1], operator);
 
 
 function getOperator() {
@@ -43,14 +43,14 @@ function getOperand() {
 
 // считаем резульат
 
-// function calculate(x, y, action) {
-//     switch (action) {
-//         case '*': return x * y;
-//         case '/': return x / y;
-//         case '+': return x + y;
-//         case '-': return x - y;
-//     }
-// }
-//
+function calculate(x, y, action) {
+    switch (action) {
+        case '*': return x * y;
+        case '/': return x / y;
+        case '+': return x + y;
+        case '-': return x - y;
+    }
+}
+
 
 // выводим результат
