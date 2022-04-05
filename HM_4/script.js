@@ -3,7 +3,7 @@
 
 const operator = getOperator();
 
-let operand = getOperand();
+const operand = getOperand();
 
 result = calculate(operand[0], operand[1], operator);
 
@@ -30,7 +30,7 @@ function getOperand() {
     //     alert('You need to enter numbers separated by commas');
     //     numbers =  [prompt('What numbers?')];
     // }
-    numbers.split(',');
+    numbersSplit = numbers.split(',');
     return numbers;
 }
 
