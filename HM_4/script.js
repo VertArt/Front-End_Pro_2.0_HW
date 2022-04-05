@@ -5,7 +5,7 @@ const operator = getOperator();
 
 const operand = getOperand();
 
-result = calculate(operand[0], operand[1], operator);
+// result = calculate(operand[0], operand[1], operator);
 
 
 function getOperator() {
@@ -25,13 +25,13 @@ function isOperatorValid(value) {
 // првоеряем на пустую строку и нул
 
 function getOperand() {
-    let numbers =  [prompt('What numbers?')]
+    let numbers =  prompt('What numbers?')
     // while ( isOperandValid (numbers)) {
     //     alert('You need to enter numbers separated by commas');
     //     numbers =  [prompt('What numbers?')];
     // }
     numbersSplit = numbers.split(',');
-    return numbers;
+    return numbersSplit;
 }
 
 // function isOperandValid(value) {
