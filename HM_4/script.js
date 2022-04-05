@@ -7,6 +7,8 @@ const operand = getOperand();
 
 result = calculate(+operand[0], +operand[1], operator);
 
+showResult();
+
 
 function getOperator() {
     let op = prompt('What action do you want to take?')
@@ -54,3 +56,7 @@ function calculate(x, y, action) {
 
 
 // выводим результат
+
+function showResult() {
+    alert(`${operand[0]} ${operator} ${operand[1]} = ${result}`)
+}
