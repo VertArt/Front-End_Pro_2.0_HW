@@ -36,9 +36,9 @@ function getOperand() {
     return numbersSplit;
 }
 
-// function isOperandValid(value) {
-//     return value !== '' && value !== null;
-// }
+function isOperandValid(value) {
+    return value === '' || value === null;
+}
 
 // разделяем полученые операнды и производим действие и получаем результат
 
@@ -52,6 +52,10 @@ function calculate(x, y, action) {
         case '+': return x + y;
         case '-': return x - y;
     }
+}
+
+function majorCalc(arr) {
+    
 }
 
 
