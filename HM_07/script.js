@@ -1,24 +1,23 @@
 "use strict";
 
-const obj = {
-    name: 'Alex',
-    age: 33,
-    adress: {
-        country: 'UA',
-        city: 'Dnipro',
+
+function createCalculator(base) {
+    return {
+        add: (b) => (base += b),
+        sub: (b) => (base -= b),
+        mult: (b) => (base *= b),
+        div: (b) => (base /= b),
+        set: (b) => (base = b),
+        get: (b) => base,
     }
 }
-// const a = copy(obj);
 
-function copy(val) {
-    if ( typeof val !== "function" || val === null) return val;
+const calc = createCalculator(100);
 
-    if (Array.isArray(val)) return val.map((el) => cope(el));
-
-    const objCopy = {};
-
-    for ( key in val) {
-        objCopy[key] = copy(val[key]) ;
-    }
-    return objCopy;
-}
+console.log(calc.add(50));
+console.log(calc.add(10));
+console.log(calc.sub(10));
+console.log(calc.mult(40));
+console.log(calc.div(10));
+console.log(calc.set(100));
+console.log(calc.get());
