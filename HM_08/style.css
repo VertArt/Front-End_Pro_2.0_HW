@@ -1,0 +1,7 @@
+.result {
+    font-weight: bolder;
+}
+.error {
+    color: black;
+    background-color: red;
+}
